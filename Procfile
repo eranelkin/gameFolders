@@ -1,0 +1,1 @@
+web: gunicorn app:app -b 0.0.0.0:$PORT -w 5 -k gevent --timeout 25 --log-level info
